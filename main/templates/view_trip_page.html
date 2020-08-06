@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<style>
+    body{
+        background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    }
+
+    a{
+        color: white;
+    }
+
+    h3 {
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+    }
+
+    h1{
+        color: white;
+        text-shadow: 2px 2px 8px #000000;
+    }
+
+    p{
+        font-size: 20px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Details</title>
+</head>
+
+
+
+<body>
+<div class="col-xs-1" align="center">
+    <br>
+    <a href="/dashboard">Dashboard</a>
+    <br>
+    <a href="/logout">Log out</a>
+    <br>
+
+    <h3>Hello {{user.first_name}} ! Read about your trip!</h3>
+   
+    <h1>{{trip.destination}}</h1>
+    <br>
+
+    <p><b>Start Date:</b> {{trip.start_date}}</p>
+
+    <p><b>End Date:</b> {{trip.end_date}}</p>
+
+    <p><b>Created on:</b> {{trip.created_at}}</p>
+
+    <p><b>Last updated:</b> {{trip.updated_at}}</p>
+
+    <p><b>Plan:</b> {{trip.plan}}</p>
+
+    
+    <p><b>Posted by:</b> {{trip.user.first_name}}</p> <!-- from models gets the name of the user who created it calling USER-->
+   
+
+  
+    
+
+
+
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
